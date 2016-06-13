@@ -1,0 +1,40 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.board {
+  width: 600px;
+  height: 600px;
+}
+
+.board div {
+  width: 100px;
+  height: 100px;
+  border: 1px #ccc dotted;
+  margin: 5px;
+  border-radius: 10%;
+  background-color: #eee;
+  display: inline-block;
+}
+
+.board div:hover {
+  background-color: #ccc;
+}
+
+div.mine, div.mine:hover {
+  background: no-repeat center/60% url("bomb.svg") crimson;
+}
+
+div.mark, div.mark:hover {
+  background: no-repeat center/60% url("mark.svg") deepskyblue;
+}
+
+div.clear, div.clear:hover {
+  background-color: white;
+}
