@@ -31,6 +31,14 @@ div.mine, div.mine:hover {
   background: no-repeat center/60% url("bomb.svg") crimson;
 }
 
+div.mine.hidden {
+  background: #eee;
+}
+
+div.mine.hidden:hover {
+  background: #ccc;
+}
+
 div.mark, div.mark:hover {
   background: no-repeat center/60% url("mark.svg") deepskyblue;
 }
