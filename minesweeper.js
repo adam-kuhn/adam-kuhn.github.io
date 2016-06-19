@@ -30,6 +30,9 @@ function addListeners (element) {
 
 function showCell (e) {
   e.target.classList.remove('hidden')
+  if (e.target.classList.contains('mine')) {
+    return showAllMines()
+  }
   showSurrounding(e.target)
   checkForWin()
 }
@@ -58,6 +61,14 @@ function checkForWin () {
     return
   }
   alert('WIN')
+}
+
+function showAllMines () {
+  var mines = document.getElementsByClassName('mine')
+  for (var i = 0; i < mines.length; i++) {
+    mines[i].classList.remove('hidden')
+    mines[i].classList.remove('marked')
+  }
 }
 
 function countSurroundingMines (cell) {
