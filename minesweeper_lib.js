@@ -8,9 +8,6 @@ function getSurroundingCells (row, col) {
     .filter(function (cell) {
       return columns.includes(cell.col) && rows.includes(cell.row)
     })
-    .filter(function (cell) {
-      return !(cell.row === row && cell.col === col)
-    })
 }
 
 // For the given DOM element, displays surrounding mine counts
@@ -46,12 +43,13 @@ function setInnerHTML (cell) {
   if (element.classList.contains('marked')) {
     return
   }
+  element.innerHTML = cell.surroundingMines > 0 ? 
+    cell.surroundingMines : ''
   if (element.classList.contains('hidden')) {
     element.classList.remove('hidden')
     if (cell.surroundingMines === 0) {
       return showSurrounding(element)
     }
-    element.innerHTML = cell.surroundingMines
   }
 }
 
