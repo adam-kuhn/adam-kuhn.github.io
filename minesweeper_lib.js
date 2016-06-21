@@ -1,3 +1,32 @@
+// Array.includes polyfill
+if (!Array.prototype.includes) {
+  Array.prototype.includes = function(searchElement /*, fromIndex*/ ) {
+    'use strict'
+    var O = Object(this)
+    var len = parseInt(O.length, 10) || 0
+    if (len === 0) {
+      return false
+    }
+    var n = parseInt(arguments[1], 10) || 0
+    var k
+    if (n >= 0) {
+      k = n
+    } else {
+      k = len + n
+      if (k < 0) {k = 0}
+    }
+    var currentElement
+    while (k < len) {
+      currentElement = O[k]
+      if (searchElement === currentElement) { // NaN !== NaN
+        return true
+      }
+      k++
+    }
+    return false
+  }
+}
+
 // Expects a `board` object in global scope
 // Returns a subset of the `cells` array, including only those cells
 // which are adjacent to `row`, `col`
@@ -68,3 +97,4 @@ function getUpperBound (n) {
   var limit = board.MAX_CELLS-1 || 4
   return n + 1 > limit ? limit : n + 1
 }
+
