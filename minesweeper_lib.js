@@ -33,7 +33,7 @@ function boardValid() {
     return false
   }
   if (board.cells.length > 100) {
-    displayMessage('The game can only cope with cell numbers up to 99! Try again with fewer cells.')
+    displayMessage('The game can only cope with cell numbers up to 100! Try again with fewer cells.')
     return false
   }
   if (!isSquare(board.cells.length)) {
@@ -49,11 +49,12 @@ function cellsValid () {
   return invalidCells.length === 0
 }
 
-// Checks each cell to make sure it has:
-// 1. a row property
-// 2. a col property
-// 3. an isMine property
-// 4. that the coordinates are valid
+// Checks each cell to make sure:
+// 1. it has a row property
+// 2. it has a col property
+// 3. that the coordinates are valid
+// 4. it has an isMine property
+// 5. it has a hidden property
 function isInvalidCell (cell) {
   if (typeof cell !== 'object') {
     displayMessage('At least one of those cells is not an object! <code>{ }</code>')
@@ -72,6 +73,10 @@ function isInvalidCell (cell) {
   }
   if (!cell.hasOwnProperty('isMine')) {
     displayMessage("I found a cell that doesn't know if it's a mine or not (each cell needs an <code>isMine</code> property)!")
+    return true
+  }
+  if (!cell.hasOwnProperty('hidden')) {
+    displayMessage("I found a cell that doesn't know if it's hidden or not (each cell needs a <code>hidden</code> property)!")
     return true
   }
   return false
@@ -118,3 +123,6 @@ function displayMessage (msg) {
 function isArray(a) {
   return Object.prototype.toString.call(a) === '[object Array]' 
 }
+
+
+
