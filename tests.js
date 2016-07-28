@@ -1,5 +1,6 @@
-var lib = {
-  initBoard: initBoard
+var tests = {
+  boardValid: boardValid,
+  cellsValid: cellsValid
 }
 
 function initBoard () {
@@ -15,7 +16,7 @@ function initBoard () {
 // 3. that the cells array is not empty
 // 4. that the cells array is not too large
 // 5. that the number of cells can form a square
-function boardValid() {
+function boardValid () {
   if (typeof board !== 'object') {
     displayMessage('Remember to define your <code>board</code> object!')
     return false
