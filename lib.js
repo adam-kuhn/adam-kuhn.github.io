@@ -1,4 +1,43 @@
-// Expects a `board` object in global scope
+var lib = {
+  initBoard: initBoard
+}
+
+function initBoard () {
+  if (!tests.boardValid() || !tests.cellsValid()) {
+    return null
+  }
+  displayMessage("Let\'s play!")
+}
+
+// Array.includes polyfill
+if (!Array.prototype.includes) {
+  Array.prototype.includes = function(searchElement /*, fromIndex*/ ) {
+    'use strict'
+    var O = Object(this)
+    var len = parseInt(O.length, 10) || 0
+    if (len === 0) {
+      return false
+    }
+    var n = parseInt(arguments[1], 10) || 0
+    var k
+    if (n >= 0) {
+      k = n
+    } else {
+      k = len + n
+      if (k < 0) {k = 0}
+    }
+    var currentElement
+    while (k < len) {
+      currentElement = O[k]
+      if (searchElement === currentElement) { // NaN !== NaN
+        return true
+      }
+      k++
+    }
+    return false
+  }
+}
+
 // Returns a subset of the `cells` array, including only those cells
 // which are adjacent to `row`, `col`
 function getSurroundingCells (row, col) {
@@ -67,70 +106,5 @@ function getLowerBound (n) {
 function getUpperBound (n) {
   var limit = board.MAX_CELLS-1 || 4
   return n + 1 > limit ? limit : n + 1
-}
-
-function showCell (e) {
-  e.target.classList.remove('hidden')
-  if (e.target.classList.contains('mine')) {
-    return showAllMines()
-  }
-  showSurrounding(e.target)
-  checkForWin()
-}
-
-function markCell (e) {
-  e.preventDefault()
-  e.target.classList.toggle('marked')
-  e.target.classList.remove('hidden')
-  e.target.innerHTML = ''
-  board.cells
-    .find(function (cell) {
-      return cell.row === getRow(e.target) && cell.col === getCol(e.target)
-    })
-    .isMarked = true
-  checkForWin()
-}
-
-function markCell (e) {
-  e.preventDefault()
-  e.target.classList.toggle('marked')
-  e.target.classList.remove('hidden')
-  e.target.innerHTML = ''
-  board.cells
-    .find(function (cell) {
-      return cell.row === getRow(e.target) && cell.col === getCol(e.target)
-    })
-    .isMarked = true
-  checkForWin()
-}
-
-function showAllMines () {
-  var mines = document.getElementsByClassName('mine')
-  for (var i = 0; i < mines.length; i++) {
-    mines[i].classList.remove('hidden')
-    mines[i].classList.remove('marked')
-  }
-}
-
-function getLoc(element, coordinate) {
-  for (var i = 0; i < element.classList.length; i++) {
-    if (element.classList[i].substring(0, 3) === coordinate) {
-      return parseInt(element.classList[i].split('-')[1], 10)
-    }
-  }
-  return null
-}
-
-function getRow (element) {
-  return getLoc(element, 'row')
-}
-
-function getCol (element) {
-  return getLoc(element, 'col')
-}
-
-function addListeners (element) {
-  element.addEventListener('click', showCell)
-  element.addEventListener('contextmenu', markCell)
 }
 
