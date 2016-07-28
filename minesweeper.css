@@ -9,6 +9,10 @@ body {
   justify-content: center;
 }
 
+#message {
+  display: flex;
+}
+
 .board {
   width: 420px;
   height: 420px;
