@@ -3,16 +3,16 @@ document.addEventListener('DOMContentLoaded', startGame)
 // Define your `board` object here!
 var board = {
   cells: [
-    { row: 0, col: 0, isMine: false, hidden: false }, 
+    { row: 0, col: 0, isMine: true, hidden: false }, 
     { row: 1, col: 0, isMine: false, hidden: true }, 
-    { row: 0, col: 1, isMine: false, hidden: true }, 
+    { row: 0, col: 1, isMine: true, hidden: true }, 
     { row: 1, col: 1, isMine: false, hidden: true }
   ]
 }
 
 function startGame () {
   // Don't remove this if statement: it makes the game work!
-  if (!lib.initBoard()) {
+  if (!lib.refresh()) {
     return
   }
 
