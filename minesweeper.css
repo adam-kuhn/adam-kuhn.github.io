@@ -6,7 +6,7 @@ html, body {
 body {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-center;
   flex-direction: column
 }
 
@@ -15,8 +15,6 @@ body {
 }
 
 .board {
-  width: 420px;
-  height: 420px;
   display: flex;
   flex-wrap: wrap;
 }
