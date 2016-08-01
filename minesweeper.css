@@ -6,12 +6,15 @@ html, body {
 body {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-center;
+  flex-direction: column
+}
+
+#message {
+  display: flex;
 }
 
 .board {
-  width: 420px;
-  height: 420px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -35,7 +38,7 @@ body {
 }
 
 div.mine, div.mine:hover {
-  background: no-repeat center/60% url("bomb.svg") crimson;
+  background: no-repeat center/60% url("images/bomb.svg") crimson;
 }
 
 div.hidden {
@@ -47,5 +50,5 @@ div.hidden:hover {
 }
 
 div.marked, div.marked:hover {
-  background: no-repeat center/60% url("mark.svg") deepskyblue;
+  background: no-repeat center/60% url("images/mark.svg") deepskyblue;
 }
