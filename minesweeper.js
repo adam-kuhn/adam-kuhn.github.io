@@ -4,12 +4,12 @@ document.addEventListener('DOMContentLoaded', startGame)
 var board = {
   cells: [
     { row: 0, col: 0, isMarked: false, isMine: false, hidden: true }, 
+    { row: 2, col: 0, isMarked: false, isMine: false, hidden: true }, 
+    { row: 1, col: 2, isMarked: false, isMine: false, hidden: true }, 
     { row: 0, col: 1, isMarked: false, isMine: false, hidden: true }, 
     { row: 0, col: 2, isMarked: false, isMine: true, hidden: true }, 
     { row: 1, col: 0, isMarked: false, isMine: true, hidden: true }, 
     { row: 1, col: 1, isMarked: false, isMine: false, hidden: true }, 
-    { row: 1, col: 2, isMarked: false, isMine: false, hidden: true }, 
-    { row: 2, col: 0, isMarked: false, isMine: false, hidden: true }, 
     { row: 2, col: 1, isMarked: false, isMine: false, hidden: true }, 
     { row: 2, col: 2, isMarked: false, isMine: false, hidden: true } 
   ]
@@ -27,7 +27,10 @@ function startGame () {
   lib.initBoard()
 }
 
-// Define this function
+// Define this function to look for a win condition:
+//
+// 1. Are all of the cells that are NOT mines visible?
+// 2. Are all of the mines marked?
 function checkForWin () {
   // Here, loop through 
   var remaining = board.cells
@@ -35,6 +38,13 @@ function checkForWin () {
       return cell.hidden && !cell.isMarked
     })
   if (remaining.length > 0) {
+    return
+  }
+  var incorrect = board.cells
+    .filter(function (cell) {
+      return cell.isMarked && !cell.isMine
+    })
+  if (incorrect.length > 0) {
     return
   }
 
