@@ -17,3 +17,20 @@ a {
   padding: 10px;
 
 }
+.bottomtitle {
+  margin-top: 0em;
+  margin-right: auto;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  padding: 0.25em 0;
+
+  font-family: "grecian-light-face", sans-serif;
+  font-size: 2em;
+  border-top: 0.2em solid #272625;
+  border-bottom: 0.2em solid #272625;
+  box-sizing: border-box;
+  max-width: 30rem;
+
+  text-align: center;
+
+}
