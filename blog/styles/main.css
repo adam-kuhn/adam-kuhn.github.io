@@ -29,10 +29,14 @@ body {
 
 .sub-title {
 
-  border-top: 0.15em solid #242122;
-  margin: 1em;
-  padding: 5em, 0em;
-  text-align:center;
+  border-top: 0.35rem solid #242122;
+  border-bottom: 0.35rem solid #242122;
+  margin: 1rem;
+  padding: 0.25em 0rem;
+  max-width: 30rem;
+  text-align: center;
+  box-sizing: border-box;
+
 }
 
 @media (min-width: 750px) {
@@ -42,4 +46,11 @@ body {
     .desktop-align-center{
       text-align: center;
     }
+  .sub-title {
+    margin: 1rem auto;
+    padding: 0.25em 0rem;
+    max-width: 15em;
+    text-align: center;
+    box-sizing: border-box;
+  }
 }
