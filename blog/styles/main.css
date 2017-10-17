@@ -21,6 +21,7 @@ body {
   float: left;
 }
 
+
 .navbar {
   float: left;
 }
@@ -42,5 +43,8 @@ footer {
 @media (min-width: 750px) {
   .container{
     width: 80%;
+    }
+    .align-center{
+      text-align: center;
     }
 }
