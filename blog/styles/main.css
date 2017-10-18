@@ -85,11 +85,9 @@ body {
   }
   .footer {
     position: relative;
-    bottom: 2%;
-    right: 10%;
-    left:10%;
+    
     padding: 1%;
-    max-width: 960px;
+    max-width: auto;
 
   }
   .extra1 {
