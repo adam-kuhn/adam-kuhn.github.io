@@ -43,10 +43,14 @@ body {
   max-width: 30rem;
   text-align: center;
   box-sizing: border-box;
-  
+
 
 }
 
+.footer {
+  background-color: #eaddc5;
+  padding: 2%;
+}
 .question {
   font-family:'Merriweather Sans', sans-serif;
   font-weight: bold;
