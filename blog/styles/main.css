@@ -33,7 +33,8 @@ body {
   width: 100%;
   padding-top: 5%;
   padding-left: 5%;
-  z-index: 1;
+  z-index: 2;
+  position: relative;
 }
 
 
@@ -69,25 +70,24 @@ body {
     }
     .desktop-align-center{
       text-align: center;
+      position: relative;
+      z-index: 1;
     }
   .sub-title {
     margin: 2rem auto;
     padding: 0.25em 0rem;
-    max-width: 15em;
+    max-width: 10em;
     text-align: center;
     box-sizing: border-box;
   }
 
-  .navbar {
-    padding-bottom: 120%;
-    position: relative;
-    bottom: 0;
-  }
   .footer {
     position: relative;
-    
     padding: 1%;
     max-width: auto;
+    z-index: 0;
+
+
 
   }
   .extra1 {
@@ -98,6 +98,15 @@ body {
     top: 0;
     width: 35%;
     z-index: -1;
+}
+    .extra2 {
+      background-color: #f7edd9;
+      bottom: 0;
+      top: 0;
+      left: 0;
+      position: absolute;
+      width: 25%;
+      z-index: 0;
 
 
   }
