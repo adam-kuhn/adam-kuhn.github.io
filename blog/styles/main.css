@@ -27,6 +27,13 @@ body {
   max-width: 100%;
 }
 
+.navbar {
+  background-color: #f7edd9;
+  width: 100%;
+  padding-top: 5%;
+  padding-left: 5%;
+
+}
 .sub-title {
 
   border-top: 0.35rem solid #242122;
@@ -36,6 +43,7 @@ body {
   max-width: 30rem;
   text-align: center;
   box-sizing: border-box;
+  
 
 }
 
@@ -57,5 +65,9 @@ body {
     max-width: 15em;
     text-align: center;
     box-sizing: border-box;
+  }
+
+  .navbar {
+    padding-bottom: 100%;
   }
 }
