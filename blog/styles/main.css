@@ -117,8 +117,8 @@ body {
   .top-extra {
     background-color: #f9ebb7;
     top: 0;
-    left: -20%;
-    right: -20%;
+    left: 0;
+    right: 0;
     height: 70px;
     position: absolute;
     width: 100%;
