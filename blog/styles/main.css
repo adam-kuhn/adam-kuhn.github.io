@@ -25,6 +25,7 @@ body {
 .img-responsive {
   max-height: auto;
   max-width: 100%;
+  z-index: 1;
 }
 
 .navbar {
@@ -32,8 +33,10 @@ body {
   width: 100%;
   padding-top: 5%;
   padding-left: 5%;
-
+  z-index: 1;
 }
+
+
 .sub-title {
 
   border-top: 0.35rem solid #242122;
@@ -50,7 +53,11 @@ body {
 .footer {
   background-color: #eaddc5;
   padding: 2%;
+
 }
+
+
+
 .question {
   font-family:'Merriweather Sans', sans-serif;
   font-weight: bold;
@@ -72,6 +79,28 @@ body {
   }
 
   .navbar {
-    padding-bottom: 100%;
+    padding-bottom: 120%;
+    position: relative;
+    bottom: 0;
+  }
+  .footer {
+    position: relative;
+    bottom: 2%;
+    right: 10%;
+    left:10%;
+    padding: 1%;
+    max-width: 960px;
+
+  }
+  .extra1 {
+    background-color: #e0ceac;
+    bottom: 0;
+    right: 5%;
+    position: fixed;
+    top: 0;
+    width: 35%;
+    z-index: -1;
+
+
   }
 }
