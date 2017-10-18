@@ -115,6 +115,7 @@ body {
     position:relative;
     left: -10%;
     padding-left: 10%;
+    margin-left: 50%;
   }
 
   .right-extra {
@@ -151,5 +152,10 @@ body {
     position: absolute;
     width: 100%;
     z-index: 0;
+  }
+  .navbar{
+    position: fixed;
+    width:auto;
+    padding: 1rem;
   }
 }
