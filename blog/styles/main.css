@@ -63,7 +63,7 @@ body {
   font-weight: bold;
 }
 
-@media (min-width: 750px) {
+@media (min-width: 550px) {
   .container{
     width: 80%;
     }
