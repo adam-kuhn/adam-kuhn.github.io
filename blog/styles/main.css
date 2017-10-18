@@ -69,6 +69,17 @@ body {
   font-weight: bold;
 }
 
+.top-extra {
+  background-color: #e8d5b0;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+}
+
 
 
 @media (min-width: 550px) {
