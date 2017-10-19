@@ -112,8 +112,10 @@ body {
 
   .scroll {
     position:relative;
+    box-sizing: border-box;
     left: -10%;
     padding-left: 10%;
+    width:100%;
     margin-left: 50%;
   }
 
