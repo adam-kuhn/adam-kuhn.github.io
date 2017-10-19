@@ -184,6 +184,12 @@ body {
     right:-80%
   }
 
+  .fixed-top-right{
+    position: fixed;
+    top: 8%;
+    right: 6%;
+  }
+
 
 
 }
