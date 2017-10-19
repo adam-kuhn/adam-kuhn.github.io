@@ -182,7 +182,9 @@ body {
   }
 
   .img-responsive {
-    right:-80%
+    right:5%;
+    max-width: 30%;
+    
   }
 
   .fixed-top-right{
