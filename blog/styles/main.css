@@ -107,8 +107,11 @@ body {
     margin: 2rem auto;
     padding: 0.25em 0rem;
     max-width: 10em;
+
     text-align: center;
     box-sizing: border-box;
+    position: relative;
+    left: -10%;
   }
 
   .scroll {
