@@ -190,6 +190,10 @@ body {
     right: 6%;
   }
 
+  .fixed{
+    position: fixed;
+  }
+
 
 
 }
