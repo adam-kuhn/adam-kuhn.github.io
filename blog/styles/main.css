@@ -79,7 +79,7 @@ body {
 .answer {
   padding: 0rem 1rem;
 }
-.top-extra {
+.top-extra-mobile {
   background-color: #e8d5b0;
   top: 0;
   left: 0;
@@ -100,6 +100,7 @@ body {
   .desktop-align-center{
     text-align: center;
     position: relative;
+    margin-top: 10rem;
     z-index: 4;
     }
 
