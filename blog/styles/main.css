@@ -24,9 +24,9 @@ body {
 
 
 .img-responsive {
-  max-height: auto;
   max-width: 100%;
   position:relative;
+
   z-index: 4;
 }
 
@@ -162,6 +162,10 @@ body {
     padding-right: 0rem;
     padding-left: 1rem;
     background-color: #f7edd9;
+  }
+
+  .img-responsive {
+    right:-80%
   }
 
 
