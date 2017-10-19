@@ -184,7 +184,7 @@ body {
   .img-responsive {
     right:5%;
     max-width: 30%;
-    
+
   }
 
   .fixed-top-right{
@@ -199,5 +199,12 @@ body {
   }
 
 
+
+}
+
+@media (min-width: 1200px){
+  .img-responsive {
+
+    max-width: 40%;
 
 }
