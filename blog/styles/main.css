@@ -29,6 +29,10 @@ body {
   position:relative;
   z-index: 4;
 }
+.img-answer {
+  max-width: 80%;
+  position: relative;
+}
 
 .navbar {
   background-color: #f7edd9;
@@ -177,7 +181,7 @@ body {
     max-width: 170px;
     padding-right: 0rem;
     padding-left: 1rem;
-    background-color: #f7edd9;
+    background: none;
   }
 
   .img-responsive {
