@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang=en>
 
 <head>
   <title>Adam Kuhn's Developer Blog</title>
@@ -46,7 +46,7 @@
     <!--Post Title-->
     <div class="row">
       <div class="twelve columns">
-        <h1 class="desktop-align-center">From Paper to Screen</h1>
+        <h1 class="desktop-align-center">JavaScript Basics</h1>
       </div>
     </div>
 
@@ -80,24 +80,60 @@
               <a class="navbar-link" href="../blog/c3-meditation-process.html">Process and Meditation</a>
             </li>
             <li class="navbar-item">
-              <a class="navbar-link" href="../blog/t4-javascript-basics.html">JavaScript Basics</a>
-            </li>
-
-            <li class="navbar-item">
               <a class="navbar-link" href="../blog/c4-daily-mindfulness.html">Mindful Conversation</a>
             </li>
+
+
           </ul>
         </nav>
       </div>
+
 
       <!--Question and Answer-->
       <div class="five columns">
         <div class="scroll">
           <div class="front">
-            <p class="question">This is a question.</p>
-            <p class="answer">Here is a answer.</p>
+            <p class="question">How does JavaScript compare to HTML and CSS?</p>
+            <p class="answer">HTML is the structure, CSS is the style, and JavaScript is what brings the site to life. JavaScript enables your website to be interactive by responding to the user. For example the the total price of your online shopping cart, could be the
+              result of JavaScript. As you add or remove items from your cart, the price will change, and JavaScript code is the reason for this. </p>
             <br>
-            <p class="question">another q</p>
+            <p class="question">What is control flow? What is a loop?</p>
+            <div class="answer">
+              <ul>
+                <li>Control Flow is the flow of code from one step to the next. Each step will run based on a set condition. If the specified condition is not met, another step will be executed.</li>
+
+                <li>Going Outside
+                  <ul>
+                    <li>Is it raining?
+                      <ul>
+                        <li>Yes - take umbrella</li>
+                        <li>No - leave the umbrella at home</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>Loops are a block of code that will run until a desired outcome is reached.
+                  <li>Flipping a Coin
+                    <ul>
+                      <li>Does the flipped coin show heads?
+                        <ul>
+                          <li>Yes - flip the coin again</li>
+                          <li>No - stop flipping, because tails is cool.</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+              </ul>
+            </div>
+            <br>
+            <p class="question">How is acessing data in an Array different than an accessing data in an Object?</p>
+            <p class="answer">To access data in an array you must call on the index of the data that you want. For example someArray[2], this will call on the third value of the array. It is the third because JavaScript is 0 indexed, therefore the first value in an array
+              has an index of 0. To access data in an object we need to call on the values 'key'. For example someObject['age'] or SomeObject.age, will both return the value of the key 'age' that is stored in someObject. Essentially arrays are lists of
+              values and each value can be called upon by its place in the list. And objects are unordered lists that contain keys. Calling on the keys allow us to access the stored value.</p>
+            <br>
+            <p class="question">What are functions and why are they useful</p>
+            <p class="answer">Functions are a lines of code, written with empty variables. By assigning variables to the function we will recieve our result. This allows us to write one function, and call upon it as many times as we like and with different variables and
+              recieve our results. For example addFunction(x,y) returns the value of x+y. We can then write addFunction(22,28), addFunction(999+20), addFunction('Hello ', 'World'), and we will receive 50, 1019, and 'Hello World', respectively.</p>
           </div>
         </div>
       </div>
@@ -107,7 +143,7 @@
         <div class="front">
           <div class="align-right">
             <div class="fixed">
-              <img class="img-responsive" src="styles/images/mockup.jpg">
+              <img class="img-responsive" src="styles/images/coffee-mug.jpg" alt="a coffee cup and saucer.">
             </div>
           </div>
         </div>
@@ -119,11 +155,15 @@
 
 
 
+
+
+
+
     <!--sub-title psuedo footer-->
     <div class="row">
       <div class="twelve columns">
         <div class="footer">
-          <h4 class="sub-title">XXX</h4>
+          <h4 class="sub-title">1 == '1', TRUE</h4>
         </div>
       </div>
     </div>
