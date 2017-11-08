@@ -23,9 +23,9 @@ function startGame () {
     board.cells[cell].surroundingMines = countSurroundingMines(cell);
   }
 
+
   document.addEventListener('click', checkForWin);
-  document.addEventListener('click', checkForWin);
-  document.addEventListener('oncontextmenu', checkForWin);
+  document.addEventListener('contextmenu', checkForWin);
 
 
   // Don't remove this function call: it makes the game work!
@@ -39,16 +39,29 @@ function startGame () {
 function checkForWin () {
   let checkCell = 0;
   for (checkCell in board.cells){
-    if (board.cells[checkCell].isMarked === true && board.cells[checkCell].isMine === true){
-      for (checkCell in board.cells) {
-        if (board.cells[checkCell].isMine === false && board.cells[checkCell].hidden === false){
-          return lib.displayMessage('You win!');
+    if (board.cells[checkCell].isMine === false && board.cells[checkCell].hidden === true){
+
+    }
+
+    if (board.cells[checkCell].isMine === true && board.cells[checkCell].isMarked === false){
+
+    }
+
+    if (board.cells[checkCell].isMine === true && board.cells[checkCell].isMarked === true){
+      let checkHidden = 0
+      for (checkHidden in board.cells){
+      if (board.cells[checkHidden].hidden === false && board.cells[checkHidden].isMine === false){
+
+      return lib.displayMessage('You win!');
+    }
+  }
+}
         }
-      }
-    }
 
 
-    }
+
+
+
 
 
 //}
