@@ -88,32 +88,32 @@ function checkForWin () {
     }
 }
 if (nonMine == (size * size) - size && markedMine == size){
-return lib.displayMessage('You Win! Double Click to play again.')
+return lib.displayMessage('Congratulations you survived the Vampires! Double Click to play again.')
 }
 
 else if (nonMine == (size * size) - size + 1 && markedMine == size - 1){
-return lib.displayMessage('You Win! Double Click to play again.')
+return lib.displayMessage('Congratulations you survived the Vampires!! Double Click to play again.')
 }
 
 else if (nonMine == (size * size) - size + 2 && markedMine == size - 2){
-return lib.displayMessage('You Win! Double Click to play again.')
+return lib.displayMessage('Congratulations you survived the Vampires!! Double Click to play again.')
 }
 
 else if (nonMine == (size * size) - size + 3 && markedMine == size - 3){
-return lib.displayMessage('You Win! Double Click to play again.')
+return lib.displayMessage('Congratulations you survived the Vampires!! Double Click to play again.')
 }
 
 else if (nonMine == (size * size) - size + 4 && markedMine == size - 4){
-return lib.displayMessage('You Win! Double Click to play again.')
+return lib.displayMessage('Congratulations you survived the Vampires!! Double Click to play again.')
 }
 
 else if (nonMine == (size * size) - size + 5 && markedMine == size - 5){
-return lib.displayMessage('You Win! Double Click to play again.')
+return lib.displayMessage('Congratulations you survived the Vampires!! Double Click to play again.')
 }
 
   // You can use this function call to declare a winner (once you've
   // detected that they've won, that is!)
-  //   lib.displayMessage('You win!')
+  //   lib.displayMessage('Congratulations you survived the Vampires!!')
 }
 
 // Define this function to count the number of mines around the cell
