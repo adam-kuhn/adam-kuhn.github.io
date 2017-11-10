@@ -54,6 +54,7 @@ function startGame () {
 
   document.addEventListener('click', checkForWin);
   document.addEventListener('contextmenu', checkForWin);
+  document.addEventListener('dblclick', tryAgain);
 
 
   // Don't remove this function call: it makes the game work!
@@ -64,29 +65,10 @@ function startGame () {
 //
 // 1. Are all of the cells that are NOT mines visible?
 // 2. Are all of the mines marked?
+
+  //check for win
 function checkForWin () {
-// define win first?
-/*let checkMine = 0
-for (checkMine in board.cells){
-if (board.cells[checkMine].isMine === true && board.cells[checkMine].isMarked === true || board.cells[checkMine].isMine === false && board.cells[checkMine].hidden === false){
-  //code to make game continue - loop for continue
-  let checkCell = 0
-  for (checkCell in board.cells){
-    if (board.cells[checkCell].isMine === true && board.cells[checkCell].isMarked === false || board.cells[checkCell].isMine === false && board.cells[checkCell].hidden === true ){
-      return
-    } else if (board.cells[checkCell].isMine === false && board.cells[checkCell].hidden === true){
-      return
-    } else if (board.cells[checkCell].isMine === false && board.cells[checkCell].hidden === false){
-      return lib.displayMessage('ahha');
-    }
-    //} else if (board.cells[checkCell].isMine === false && board.cells[checkCell].hidden === false){
-      //return lib.displayMessage('You Win!')
-    }
-  }
-}*/
 
-
-  //only requires 1 mine checked and 1 non-mine checked to trigger win...
   let nonMine = 0;
   let markedMine = 0;
 
@@ -107,34 +89,6 @@ if (nonMine == (size * size) - size && markedMine == size){
 return lib.displayMessage('You Win!')
 }
 
-
-    /*if (board.cells[checkCell].hidden === false && board.cells[checkCell].isMine === false){
-      let checkMarked = 0
-      for (checkMarked in board.cells){
-        if (board.cells[checkMarked].isMine === true && board.cells[checkMarked].isMarked === false){
-
-        } else if (board.cells[checkMarked].isMine === true && board.cells[checkMarked].isMarked === true){
-          let checkAgain = 0
-          for (checkAgain in board.cells){
-            if (board.cells[checkAgain].isMine === true && board.cells[checkAgain].isMarked === false){
-
-            } else if (board.cells[checkAgain].isMine === false && board.cells[checkAgain].hidden === true){
-
-            } else if (board.cells[checkAgain].isMine === true && board.cells[checkAgain].hidden === false){
-            return lib.displayMessage('You Win!')
-            }
-          }
-        }
-
-
-      }
-    }*/
-
-
-
-
-
-//}
   // You can use this function call to declare a winner (once you've
   // detected that they've won, that is!)
   //   lib.displayMessage('You win!')
@@ -150,7 +104,6 @@ return lib.displayMessage('You Win!')
 // them, counting the number of times `cell.isMine` is true.
 
 
-
 function countSurroundingMines (cell) {
 
   var surroundingCells = lib.getSurroundingCells(board.cells[cell].row, board.cells[cell].col);
@@ -164,4 +117,13 @@ let selectedCell = 0;
     }
   }
   return count;
+}
+
+function tryAgain(){
+  for (x = 0; x < size*size; x ++){
+
+board.cells[x].remove(x);
+}
+  startGame()
+
 }
