@@ -17,10 +17,14 @@ function randomBoard(){
   }
 
   let makeMine = 0;
-  while (makeMine < numberOfMines){
+  for (makeMine in board.cells){
 
       board.cells[Math.floor((Math.random() * ((Math.floor(size/4)) + 3)))].isMine = true;
       makeMine += 1;
+
+      if (makeMine < numberOfMines){
+        return
+      }
     }
   }
 
