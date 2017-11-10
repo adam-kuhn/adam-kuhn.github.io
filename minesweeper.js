@@ -7,17 +7,24 @@ var board = {
 
 
 function randomBoard(){
-  size = Math.floor(Math.random() * (7-3) + 3);
+  size = Math.floor((Math.random() * (7-3)) + 3);
+  numberOfMines = Math.floor(size/2);
+
   for (row = 0; row < size; row ++){
     for(col = 0; col < size; col ++){
-      board.cells.push({row: row, col: col, isMine: true, isMarked: false, hidden: true})
+      board.cells.push({row: row, col: col, isMine: false, isMarked: false, hidden: true})
     }
-
-    //board.cells[square].isMine = true;
-    //board.cells[square].isMarked = false;
-    //board.cells[square].hidden = true;
   }
-}
+
+  let makeMine = 0;
+  while (makeMine < numberOfMines){
+
+      board.cells[Math.floor((Math.random() * ((Math.floor(size/4)) + 3)))].isMine = true;
+      makeMine += 1;
+    }
+  }
+
+
   /*cells: [
     {row:0, col:0, isMine: true, hidden: true},
     {row:0, col:1, isMine: true, hidden: true},
