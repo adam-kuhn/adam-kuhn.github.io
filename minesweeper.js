@@ -120,10 +120,7 @@ let selectedCell = 0;
 }
 
 function tryAgain(){
-  for (x = 0; x < size*size; x ++){
 
-board.cells[x].remove(x);
-}
-  startGame()
+window.location.reload();
 
 }
