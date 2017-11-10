@@ -86,7 +86,7 @@ function checkForWin () {
     }
 }
 if (nonMine == (size * size) - size && markedMine == size){
-return lib.displayMessage('You Win!')
+return lib.displayMessage('You Win! Double Click to play again.')
 }
 
   // You can use this function call to declare a winner (once you've
