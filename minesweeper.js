@@ -57,6 +57,8 @@ function startGame () {
   document.addEventListener('dblclick', tryAgain);
 
 
+
+
   // Don't remove this function call: it makes the game work!
   lib.initBoard()
 }
@@ -139,8 +141,18 @@ let selectedCell = 0;
   return count;
 }
 
+
+//Play Again
 function tryAgain(){
 
 window.location.reload();
 
 }
+
+//sound
+var soundExplosion = document.getElementsByTagName('audio');
+document.addEventListener('click', mineSounds);
+
+function mineSounds(){
+    soundExplosion.play();
+  }

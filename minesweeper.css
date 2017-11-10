@@ -26,13 +26,13 @@ body {
 }
 
 .board div {
-  color: green;
+  color: #fd0000;
   font-size: 2rem;
   width: 75px;
   height: 75px;
   border: 1px #ccc dotted;
   border-radius: 10%;
-  background-color: white;
+  background-color: #e8d8d8;
   margin: 3px;
   display: flex;
   align-items: center;
@@ -40,15 +40,16 @@ body {
 }
 
 .board div:hover {
-  background-color: white;
+  background-color: #e8d8d8;
 }
 
 div.mine, div.mine:hover {
-  background: no-repeat center/60% url("images/bomb.svg") crimson;
+  background: no-repeat center/60% url("images/vampire.svg");
+  background-color: #ef002d;
 }
 
 div.hidden {
-  background: #eee;
+  background: #0becd8;
 }
 
 div.hidden:hover {
@@ -56,5 +57,5 @@ div.hidden:hover {
 }
 
 div.marked, div.marked:hover {
-  background: no-repeat center/60% url("images/mark.svg") deepskyblue;
+  background: no-repeat center/60% url("images/cross.svg") #ffffff;
 }
