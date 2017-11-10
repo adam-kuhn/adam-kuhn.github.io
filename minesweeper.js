@@ -8,7 +8,7 @@ var board = {
 
 function randomBoard(){
   size = Math.floor((Math.random() * (7-3)) + 3);
-  numberOfMines = Math.floor(size/2);
+  numberOfMines = size;
 
   for (row = 0; row < size; row ++){
     for(col = 0; col < size; col ++){
@@ -16,17 +16,13 @@ function randomBoard(){
     }
   }
 
-  let makeMine = 0;
-  for (makeMine in board.cells){
 
-      board.cells[Math.floor((Math.random() * ((Math.floor(size/4)) + 3)))].isMine = true;
-      makeMine += 1;
+  for (makeMine = 0; makeMine < size; makeMine ++){
+    board.cells[Math.floor((Math.random() * (size * size)))].isMine = true;
 
-      if (makeMine < numberOfMines){
-        return
       }
     }
-  }
+
 
 
   /*cells: [
@@ -108,7 +104,7 @@ if (board.cells[checkMine].isMine === true && board.cells[checkMine].isMarked ==
        markedMine += 1;
     }
 }
-if (nonMine == 3 && markedMine == 6){
+if (nonMine == (size * size) - numberOfMines && markedMine == numberOfMines){
 return lib.displayMessage('You Win!')
 }
 
