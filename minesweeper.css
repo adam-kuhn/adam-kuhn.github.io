@@ -1,6 +1,6 @@
 html, body {
   height: 100%;
-  font-family: 'Open Sans', sans-serif
+  font-family: 'Permanent Marker', cursive;
 }
 
 body {
@@ -57,5 +57,5 @@ div.hidden:hover {
 }
 
 div.marked, div.marked:hover {
-  background: no-repeat center/60% url("images/cross.svg") #ffffff;
+  background: no-repeat center/60% url("images/cross.svg") #dcf50e;
 }
