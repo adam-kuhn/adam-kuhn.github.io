@@ -70,6 +70,7 @@ function startGame () {
 
   //check for win
 function checkForWin () {
+  var soundWin = document.getElementsByTagName('audio')[1];
 
   let nonMine = 0;
   let markedMine = 0;
@@ -88,27 +89,40 @@ function checkForWin () {
     }
 }
 if (nonMine == (size * size) - size && markedMine == size){
-return lib.displayMessage('Congratulations you avoided the Vampires! Double Click to play again.')
+lib.displayMessage('Congratulations you avoided the Vampires! Double Click to play again.');
+soundWin.play();
+return
 }
 
 else if (nonMine == (size * size) - size + 1 && markedMine == size - 1){
-return lib.displayMessage('Congratulations you avoided the Vampires!! Double Click to play again.')
+lib.displayMessage('Congratulations you avoided the Vampires!! Double Click to play again.');
+soundWin.play();
+return
+
 }
 
 else if (nonMine == (size * size) - size + 2 && markedMine == size - 2){
-return lib.displayMessage('Congratulations you avoided the Vampires!! Double Click to play again.')
+lib.displayMessage('Congratulations you avoided the Vampires!! Double Click to play again.');
+soundWin.play();
+return
 }
 
 else if (nonMine == (size * size) - size + 3 && markedMine == size - 3){
-return lib.displayMessage('Congratulations you avoided the Vampires!! Double Click to play again.')
+lib.displayMessage('Congratulations you avoided the Vampires!! Double Click to play again.');
+soundWin.play();
+return
 }
 
 else if (nonMine == (size * size) - size + 4 && markedMine == size - 4){
-return lib.displayMessage('Congratulations you avoided the Vampires!! Double Click to play again.')
+lib.displayMessage('Congratulations you avoided the Vampires!! Double Click to play again.');
+soundWin.play();
+return
 }
 
 else if (nonMine == (size * size) - size + 5 && markedMine == size - 5){
-return lib.displayMessage('Congratulations you avoided the Vampires!! Double Click to play again.')
+lib.displayMessage('Congratulations you avoided the Vampires!! Double Click to play again.');
+soundWin.play();
+return
 }
 
   // You can use this function call to declare a winner (once you've
@@ -150,9 +164,3 @@ window.location.reload();
 }
 
 //sound
-var soundExplosion = document.getElementsByTagName('audio');
-document.addEventListener('click', mineSounds);
-
-function mineSounds(){
-    soundExplosion.play();
-  }
