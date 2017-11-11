@@ -1,0 +1,61 @@
+html, body {
+  height: 100%;
+  font-family: 'Permanent Marker', cursive;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: flex-center;
+  flex-direction: column;
+}
+
+#message, #notes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#message {
+  font-size: 1.5rem;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.board div {
+  color: #fd0000;
+  font-size: 2rem;
+  width: 75px;
+  height: 75px;
+  border: 1px #ccc dotted;
+  border-radius: 10%;
+  background-color: #e8d8d8;
+  margin: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.board div:hover {
+  background-color: #e8d8d8;
+}
+
+div.mine, div.mine:hover {
+  background: no-repeat center/60% url("images/vampire.svg");
+  background-color: #ef002d;
+}
+
+div.hidden {
+  background: #0becd8;
+}
+
+div.hidden:hover {
+  background: #ccc;
+}
+
+div.marked, div.marked:hover {
+  background: no-repeat center/60% url("images/cross.svg") #dcf50e;
+}
