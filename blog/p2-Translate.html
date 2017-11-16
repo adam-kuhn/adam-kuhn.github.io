@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
   <script src="p2-translate-JS.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
 
 
@@ -51,7 +52,7 @@
     <!--Post Title-->
     <div class="row">
       <div class="twelve columns">
-        <h1 class="desktop-align-center">Technical Blogs</h1>
+        <h1 class="desktop-align-center">Maori Proverbs</h1>
       </div>
     </div>
 
@@ -70,57 +71,62 @@
         </nav>
       </div>
 
-      <!--Question and Answer-->
+      <!--Proverbs and translation-->
       <div class="five columns">
         <div class="scroll">
           <div class="front">
-            <div id="quotes" class="quotes">
-              quotes here
+            <div class="quotes">
+              <h4>Maori</h4>
+              <div id="maori" class="quotes"></div>
+              <br>
+              <h4>English</h4>
+              <div id="english" class="quotes"></div>
+            </div>
+
+            <button id="ajaxButton" type="button">Get a quote</button></div>
+          <a id=“twitter” class=“twitter-button” href="https://twitter.com/intent/tweet?text=" target="_blank">
+    <button type=“button” class=“btn btn-primary”>Tweet this!</button>
+  </a>
+
+        </div>
+
+        <!--Sidebar image-->
+        <div class="four columns ">
+          <div class="front ">
+            <div class="align-right ">
+              <div class="fixed ">
+                <img class="img-responsive " src="styles/images/coding-2.jpg " alt="computer screen displaying html code ">
+              </div>
             </div>
           </div>
-
-          <button id="ajaxButton" type="button">Get a quote</button></div>
-        <div class="button">tweet</div>
+        </div>
 
       </div>
 
-      <!--Sidebar image-->
-      <div class="four columns">
-        <div class="front">
-          <div class="align-right">
-            <div class="fixed">
-              <img class="img-responsive" src="styles/images/coding-2.jpg" alt="computer screen displaying html code">
-            </div>
+
+
+
+
+      <!--sub-title psuedo footer-->
+      <div class="row ">
+        <div class="twelve columns ">
+          <div class="footer ">
+            <h4 class="sub-title ">LET'S GET TECHNICAL, TECHNICAL!</h4>
           </div>
         </div>
       </div>
 
+
+
+      <!--Background boxes-->
+      <div class="right-extra " role="presentation "></div>
+      <div class="left-extra " role="presentation "></div>
+
+
     </div>
-
-
-
-
-
-    <!--sub-title psuedo footer-->
-    <div class="row">
-      <div class="twelve columns">
-        <div class="footer">
-          <h4 class="sub-title">LET'S GET TECHNICAL, TECHNICAL!</h4>
-        </div>
-      </div>
-    </div>
-
-
-
-    <!--Background boxes-->
-    <div class="right-extra" role="presentation"></div>
-    <div class="left-extra" role="presentation"></div>
-
-
-  </div>
-  <!--background boxes outside container so they span whole window-->
-  <div class="top-extra" role="presentation"></div>
-  <div class="bottom-extra" role="presentation"></div>
+    <!--background boxes outside container so they span whole window-->
+    <div class="top-extra " role="presentation "></div>
+    <div class="bottom-extra " role="presentation "></div>
 </body>
 
 </html>
