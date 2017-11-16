@@ -9,11 +9,16 @@
   <link rel="stylesheet" type="text/css" href="styles/main.css">
   <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
+  <script src="p2-translate-JS.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+
 </head>
 
 <body>
   <div class="container">
-
+    <!--Email and social media icon links-->
     <!--Entypo pictograms by Daniel Bruce - www.entypo.com-->
     <div class="row">
       <div class="twelve columns">
@@ -43,12 +48,14 @@
       </div>
     </div>
 
+    <!--Post Title-->
     <div class="row">
       <div class="twelve columns">
-        <h1 class="desktop-align-center">Reflection</h1>
+        <h1 class="desktop-align-center">Technical Blogs</h1>
       </div>
     </div>
 
+    <!--Navbar-->
     <div class="row">
       <div class="three columns">
         <nav class="navbar align-left">
@@ -56,21 +63,8 @@
             <li class="navbar-item">
               <a class="navbar-link" href="../index.html">Home</a>
             </li>
-
             <li class="navbar-item">
               <a class="navbar-link" href="../blog/t2-html-css-dom-p1.html">Wish List</a>
-            </li>
-            <li class="navbar-item">
-              <a class="navbar-link" href="../blog/t2-html-css-dom-p2.html">Udacity Reflection</a>
-            </li>
-            <li class="navbar-item">
-              <a class="navbar-link" href="../blog/c2-emotional-intelligence.html">Emotional Intelligence</a>
-            </li>
-            <li class="navbar-item">
-              <a class="navbar-link" href="../blog/t3-design-to-web-blog.html">From Paper to Screen</a>
-            </li>
-            <li class="navbar-item">
-              <a class="navbar-link" href="../blog/c3-meditation-process.html">Process and Meditation</a>
             </li>
           </ul>
         </nav>
@@ -80,38 +74,22 @@
       <div class="five columns">
         <div class="scroll">
           <div class="front">
-            <p class="question">What's your take on the DBC/EDA experience?</p>
-
-            <p class="answer"> It’ll be an entirely new learning environment that what is the norm. However, it seems to be appropriate and will really optimize the students’ potential.</p>
-            <br>
-
-            <p class="question">What are your impressions?</p>
-            <p class="answer"> I feel that the EDA environment is a welcoming and safe place for students to learn, challenge themselves, and grow. But will require a great amount of work and engagement from the students.
-            </p>
-            <br>
-            <p class="question">How do you see yourself engaging with this type of culture?</p>
-            <p class="answer"> I envision myself being outgoing in this culture. I’ll attempt every challenge/task as best I can and communicate while communicating with both students and teachers in order to get the most out of this experience. I will also try to be vulnerable
-              in admitting things I don’t know and ask for help when needed.
-            </p>
-            <br>
-            <p class="question">Have your expectations of EDA changed? If so, how?</p>
-            <p class="answer">No.</p>
-            <br>
-            <p class="question">Are you excited to participate in this kind of learning environment? Does it make you nervous?</p>
-            <p class="answer"> Yes, I am very excited to learn and work in this new environment. I like the idea of collaboration and learning by doing, so I hope it all works out. Yes, I am nervous. There are many unknowns in how this will all shake out, but I intend to
-              jump head first.
-            </p>
-
+            <div id="quotes" class="quotes">
+              quotes here
+            </div>
           </div>
-        </div>
+
+          <button id="ajaxButton" type="button">Get a quote</button></div>
+        <div class="button">tweet</div>
+
       </div>
 
+      <!--Sidebar image-->
       <div class="four columns">
         <div class="front">
           <div class="align-right">
             <div class="fixed">
-
-              <img class="img-responsive" src="http://www.freeimageslive.com/galleries/nature/abstract/pics/barbedwire00061.jpg" alt="Wooden post with barbed wire, and a sunset.">
+              <img class="img-responsive" src="styles/images/coding-2.jpg" alt="computer screen displaying html code">
             </div>
           </div>
         </div>
@@ -123,23 +101,26 @@
 
 
 
+    <!--sub-title psuedo footer-->
     <div class="row">
       <div class="twelve columns">
         <div class="footer">
-          <h4 class="sub-title">REFLECT &amp; GROW</h4>
+          <h4 class="sub-title">LET'S GET TECHNICAL, TECHNICAL!</h4>
         </div>
       </div>
     </div>
 
 
+
     <!--Background boxes-->
     <div class="right-extra" role="presentation"></div>
     <div class="left-extra" role="presentation"></div>
-    <div class="top-extra-mobile" role="presentation"></div>
 
-    <div class="top-extra" role="presentation"></div>
-    <div class="bottom-extra" role="presentation"></div>
+
   </div>
+  <!--background boxes outside container so they span whole window-->
+  <div class="top-extra" role="presentation"></div>
+  <div class="bottom-extra" role="presentation"></div>
 </body>
 
 </html>
