@@ -40,13 +40,13 @@ body {
   width: 100%;
   padding-top: .95rem;
   padding-left: 5%;
-  z-index: 5;
+  z-index: 6;
 
 }
 
 .front {
   position: relative;
-  z-index: 6
+  z-index: 4
 }
 .front-text{
   position: relative;
