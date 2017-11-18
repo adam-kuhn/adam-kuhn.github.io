@@ -46,7 +46,11 @@ body {
 
 .front {
   position: relative;
-  z-index: 4
+  z-index: 6
+}
+.front-text{
+  position: relative;
+  z-index: 5
 }
 
 .sub-title {
