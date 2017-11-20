@@ -46,7 +46,7 @@
     <!--Post Title-->
     <div class="row">
       <div class="twelve columns">
-        <h1 class="desktop-align-center">Technical Blogs</h1>
+        <h1 class="desktop-align-center">JavaScript Scope</h1>
       </div>
     </div>
 
@@ -59,25 +59,13 @@
               <a class="navbar-link" href="../index.html">Home</a>
             </li>
             <li class="navbar-item">
-              <a class="navbar-link" href="../blog/t2-html-css-dom-p1.html">Wish List</a>
+              <a class="navbar-link" href="c0-cultural-blogs.html">Cultural Blogs</a>
             </li>
             <li class="navbar-item">
-              <a class="navbar-link" href="../blog/t2-html-css-dom-p2.html">Udacity Reflection</a>
+              <a class="navbar-link" href="t0-technical-blogs.html">Technical Blogs</a>
             </li>
             <li class="navbar-item">
-              <a class="navbar-link" href="../blog/t3-design-to-web-blog.html">From Paper to Screen</a>
-            </li>
-            <li class="navbar-item">
-              <a class="navbar-link" href="../blog/t4-javascript-basics.html">JavaScript Basics</a>
-            </li>
-            <li class="navbar-item">
-              <a class="navbar-link" href="../blog/t5-problem-solving.html">Problem Solving</a>
-            </li>
-            <li class="navbar-item">
-              <a class="navbar-link" href="../blog/t6-js-language.html">JavaScript Basics - 2</a>
-            </li>
-            <li class="navbar-item">
-              <a class="navbar-link" href="../blog/t6-scope.html">JavaScript Scope</a>
+              <a class="navbar-link" href="p0-projects.html">Projects</a>
             </li>
           </ul>
         </nav>
@@ -87,7 +75,22 @@
       <div class="five columns">
         <div class="scroll">
           <div class="front-text">
-            The technical blogs document, my current learnings. The posts start with the most basic of concepts, but grow into more detailed works as I continue to learn and grow as a developer.
+            <p class="question">What is "scope" and how does it work in JavaScript?</p>
+            <div class="answer">
+              <p>Scope defines the specific range, that effects certain code. In JavaScrip there is Global Scope, Local, Scope and Block Scope.</p>
+              <ul>
+                <li>Global Scope: refers to variables outside of a function.</li>
+                <li>Local Scope: refers to variabls defined within a function.</li>
+                <li>Block Scope: Exists only when variable are defined by the "let" or "cont" keywords.</li>
+              </ul>
+              <p>Variabls defined in global scope (outside of functions) can be seen throughout the entiriety of the code, and can therefore be changed by other lines of code. For example if I were to right "var number = 2" then "var number = 3" the number
+                variable would now be 3.</p>
+              <p>Variabls defined in local scope (within functions) can only be seen by code within that function. Therefore code outside of the function can not change what is happening within the function. If I were to write "var number = 2" outside of
+                a function, and "var number = 3" inside of a function, then my number variable in global scope would still be 2, and the number variable inside the function would still be 3.</p>
+              <p> Variabls defined in Block Scope, must be defined with "let" or "cont" and surrounded by braces {}. When this occurs The variables can change as you move from one set of {} to another. Imagine the {} to be functions defining local scope,
+                as above. The variables only care about code in there own function or {} and won't change as the result of outside code. However, variables defined with the "var" keyword are not a part of block scope and therefore can be changed by code
+                outside of {} of which it was defined.
+            </div>
           </div>
         </div>
       </div>
@@ -97,7 +100,7 @@
         <div class="front">
           <div class="align-right">
             <div class="fixed">
-              <img class="img-responsive" src="styles/images/coding-2.jpg" alt="computer screen displaying html code">
+              <img class="img-responsive" src="styles/images/scope.jpg" alt="father and son, looking down a high-tech telescope">
             </div>
           </div>
         </div>
@@ -113,7 +116,7 @@
     <div class="row">
       <div class="twelve columns">
         <div class="footer">
-          <h4 class="sub-title">LET'S GET TECHNICAL, TECHNICAL!</h4>
+          <h4 class="sub-title">TAKE AIM</h4>
         </div>
       </div>
     </div>
