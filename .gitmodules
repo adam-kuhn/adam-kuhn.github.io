@@ -1,0 +1,3 @@
+[submodule "blog/blog/js-calculator"]
+	path = blog/blog/js-calculator
+	url = https://github.com/adam-kuhn/js-calculator.git
