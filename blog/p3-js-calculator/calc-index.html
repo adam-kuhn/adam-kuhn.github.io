@@ -6,9 +6,11 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
-  <link rel="stylesheet" type="text/css" href="styles/main.css">
+  <link rel="stylesheet" type="text/css" href="../styles/main.css">
   <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="calc-style.css">
   <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
+  <script src="calc-js.js"></script>
 </head>
 
 <body>
@@ -21,13 +23,13 @@
           <div class="align-right">
             <div class="fixed">
               <a target="_blank" href="https://www.instagram.com/adamkuhn20/">
-          <img class="social-media" src="styles/images/instagram.svg" alt="Instagram logo https://www.instagram.com/adamkuhn20/">
+          <img class="social-media" src="../styles/images/instagram.svg" alt="Instagram logo https://www.instagram.com/adamkuhn20/">
         </a>
               <a target="_blank" href="https://www.linkedin.com/in/adam-kuhn-20803481">
-          <img class="social-media" src="styles/images/linkedin.svg" alt="LinkedIn logo https://www.linkedin.com/in/adam-kuhn-20803481/">
+          <img class="social-media" src="../styles/images/linkedin.svg" alt="LinkedIn logo https://www.linkedin.com/in/adam-kuhn-20803481/">
         </a>
               <a target="_blank" href="https://github.com/adam-kuhn">
-          <img class="social-media" src="styles/images/github.svg" alt="GitHub logo https://github.com/adam-kuhn">
+          <img class="social-media" src="../styles/images/github.svg" alt="GitHub logo https://github.com/adam-kuhn">
         </a>
             </div>
           </div>
@@ -46,7 +48,7 @@
     <!--Post Title-->
     <div class="row">
       <div class="twelve columns">
-        <h1 class="desktop-align-center">Projects</h1>
+        <h1 class="desktop-align-center">JavaScript Calculator</h1>
       </div>
     </div>
 
@@ -56,41 +58,77 @@
         <nav class="navbar align-left">
           <ul class="navbar-list">
             <li class="navbar-item">
-              <a class="navbar-link" href="../index.html">Home</a>
+              <a class="navbar-link" href="../../index.html">Home</a>
             </li>
             <li class="navbar-item">
-              <a class="navbar-link" href="../blog/p1-minesweeper/vampire-sweeper.html">Vampire Sweeper</a>
+              <a class="navbar-link" href="../c0-cultural-blogs.html">Cultural Blogs</a>
             </li>
             <li class="navbar-item">
-              <a class="navbar-link" href="../blog/p2-proverbs/p2-translate.html">Maori Proverbs</a>
+              <a class="navbar-link" href="../t0-technical-blogs.html">Technical Blogs</a>
             </li>
             <li class="navbar-item">
-              <a class="navbar-link" href="../blog/p3-js-calculator/calc-index.html">JavaScript Calculator</a>
+              <a class="navbar-link" href="../p0-projects.html">Projects</a>
             </li>
-
           </ul>
         </nav>
       </div>
 
-      <!--intro text-->
+      <!--Calculator-->
       <div class="five columns">
         <div class="scroll">
           <div class="front-text">
-            Have a look at some of the porjects I've been able to create They are surely to improve with time.
+            <div class="calculator">
+
+              <!--Screens-->
+              <div class="screen">
+                <div id="calc-screen">0</div>
+                <div id="calc-equation">0</div>
+              </div>
+
+
+              <div id="calc-btns" class="calc-btns">
+                <!--Number Buttons-->
+                <div id="0" class="button nbr-btn">0</div>
+                <div id="1" class="button nbr-btn">1</div>
+                <div id="2" class="button nbr-btn">2</div>
+                <div id="3" class="button nbr-btn">3</div>
+                <div id="4" class="button nbr-btn">4</div>
+                <div id="5" class="button nbr-btn">5</div>
+                <div id="6" class="button nbr-btn">6</div>
+                <div id="7" class="button nbr-btn">7</div>
+                <div id="8" class="button nbr-btn">8</div>
+                <div id="9" class="button nbr-btn">9</div>
+
+
+                <!--Operators-->
+                <div id="plus" class="button opr-btn">+</div>
+                <div id="minus" class="button opr-btn">-</div>
+                <div id="times" class="button opr-btn">x</div>
+                <div id="divide" class="button opr-btn">/</div>
+                <div id="equals" class="button opr-btn">=</div>
+
+                <!--Clear Button-->
+                <div id="clear" class="button clear">AC</div>
+
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
       <!--Sidebar image-->
+
+      <!--
       <div class="four columns">
         <div class="front">
           <div class="align-right">
             <div class="fixed">
-              <img class="img-responsive" src="styles/images/meeting.jpg" alt="three business workers, hudled over a desk, working on large pieces of paper.">
+              <img class="img-responsive" src="styles/images/mockup.jpg">
             </div>
           </div>
         </div>
       </div>
+    -->
 
     </div>
 
@@ -102,7 +140,7 @@
     <div class="row">
       <div class="twelve columns">
         <div class="footer">
-          <h4 class="sub-title">BUILDING STUFF</h4>
+          <h4 class="sub-title">!0ll34</h4>
         </div>
       </div>
     </div>

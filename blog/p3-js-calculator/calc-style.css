@@ -1,0 +1,31 @@
+.button {
+  background: #88da2f;
+  font-weight: bold;
+  width: 70px;
+  font-size: 15px;
+}
+
+
+.opr-btn{
+  background: #ea5757;
+}
+
+.clear{
+  background: #48a6f7;
+}
+
+.screen {
+  background: #b5d6c552;
+  margin: 1rem 15%;
+  padding: 1rem;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  font-size: 20px;
+
+}
+
+.calculator {
+  background: grey;
+  width: 340px;
+  height: 288px;
+}
