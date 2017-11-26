@@ -1,7 +1,12 @@
 
 window.onload = function (){
 
-document.getElementById("0").addEventListener("click", display0);
+for (x=0; x<10; x++){
+document.getElementById(x.toString()).addEventListener("click", display)
+
+}
+
+/*document.getElementById("0").addEventListener("click", display0);
 document.getElementById("1").addEventListener("click", display1);
 document.getElementById("2").addEventListener("click", display2);
 document.getElementById("3").addEventListener("click", display3);
@@ -10,7 +15,7 @@ document.getElementById("5").addEventListener("click", display5);
 document.getElementById("6").addEventListener("click", display6);
 document.getElementById("7").addEventListener("click", display7);
 document.getElementById("8").addEventListener("click", display8);
-document.getElementById("9").addEventListener("click", display9);
+document.getElementById("9").addEventListener("click", display9);*/
 
 document.getElementById("plus").addEventListener("click", displayPlus);
 document.getElementById("minus").addEventListener("click", displayMinus);
@@ -19,13 +24,18 @@ document.getElementById("divide").addEventListener("click", displayDivide);
 document.getElementById("equals").addEventListener("click", displayAnswer);
 document.getElementById("clear").addEventListener("click", clear);
 
-let digits = document.getElementsByClassName("nbr-btn")
-let operator = document.getElementsByClassName("opr-btn")
+//let digits = document.getElementsByClassName("nbr-btn")
+//let operator = document.getElementsByClassName("opr-btn")
+}
+function display(){
+  document.getElementById("calc-screen").innerHTML = 0
+  equation.push(0)
+  displayEquation()
 }
 let equation = []
-let operator = []
-let numbers = []
-let multDiv = []
+//let operator = []
+//let numbers = []
+//let multDiv = []
 
 //add a function where equation.length is TOO big --> respone with OK smarty
 
@@ -129,7 +139,7 @@ function clear (){
 }
 
 function displayAnswer(){
-  //this will call on a variable "answer" that I will define below to be the result of the equation
+  //calcuates and displays the answer eval() calculates a string
   document.getElementById("calc-screen").innerHTML = eval(equation.join(""))
 
   //old functions that worked as a simple calculator but doesn't account for order of operations
