@@ -1,0 +1,46 @@
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+
+}
+
+.container {
+  padding: 20px;
+}
+
+header {
+  background-color: #4e799dff;
+  padding: 20px;
+}
+
+footer {
+  background-color: #4e799dff;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.header-link {
+  color: white
+}
+
+.nav-header {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero p {
+  width: 500px;
+  text-align: center;
+  margin-bottom: 40px
+}
