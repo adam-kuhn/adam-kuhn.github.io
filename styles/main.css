@@ -2,7 +2,8 @@
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
-
+  min-height: 100vh;
+  position: relative;
 }
 
 .container {
@@ -27,10 +28,19 @@ footer {
   color: white
 }
 
+.header-link.current-page {
+  color: #06fffb;
+}
+
 .nav-header {
   display: flex;
   justify-content: flex-end;
   gap: 20px;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
 }
 
 .hero {
