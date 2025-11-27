@@ -1,13 +1,15 @@
-
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
   min-height: 100vh;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .container {
   padding: 20px;
+  flex: 1;
 }
 
 header {
@@ -18,18 +20,23 @@ header {
 footer {
   background-color: #4e799dff;
   color: white;
-  position: absolute;
-  bottom: 0;
   text-align: center;
   width: 100%;
 }
 
 a {
-  color: white;
   text-decoration: none;
 }
-
-a:visited {
+nav > a {
+  color: white;
+}
+nav > a:visited {
+  color: white;
+}
+.nav-header > a {
+  color: white;
+}
+.nav-header > a:visited {
   color: white;
 }
 
@@ -57,5 +64,5 @@ a:visited {
 .hero p {
   width: 500px;
   text-align: center;
-  margin-bottom: 40px
+  margin-bottom: 40px;
 }
