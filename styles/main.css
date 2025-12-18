@@ -36,7 +36,7 @@ nav > a {
 nav > a:visited {
   color: white;
 }
-.nav-header > a {
+.nav-header > span {
   color: white;
 }
 .nav-header > a:visited {
@@ -52,6 +52,7 @@ nav > a:visited {
   justify-content: flex-end;
   gap: 10px;
   padding: 20px;
+  color: white
 
 }
 
