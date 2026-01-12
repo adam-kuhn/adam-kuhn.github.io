@@ -12,7 +12,27 @@ body {
 .container {
   padding: 20px;
   flex: 1;
-  max-width: 800px;
+  max-width: 1400px;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.faq-container {
+  max-width: 500px;
+}
+
+.text-image-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.text-image-section > img {
+  align-self: center;
+  height: 200px;
 }
 
 header {
@@ -97,8 +117,21 @@ nav > a:visited {
   gap: 10px;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 750px) {
+  .text-image-section {
+    flex-direction: row;
+  }
+  .text-image-section > img {
+    height: 400px;
+  }
   .apps-container {
     flex-direction: row;
+  }
+}
+
+
+@media (min-width: 1000px) {
+  .text-image-section > img {
+    height: 500px;
   }
 }
